@@ -1,6 +1,6 @@
 {
-  "name": "react-epub",
-  "version": "0.1.1",
+  "name": "react-reader",
+  "version": "0.7.1",
   "description": "A epub-reader for React powered by ePubJS",
   "main": "lib/index.js",
   "scripts": {
@@ -56,7 +56,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "epubjs": "git+https://git@github.com/futurepress/epub.js.git#v0.3"
+    "epubjs-es6": "^0.3.3"
   },
   "peerDependencies": {
     "react": ">=15.0.0"

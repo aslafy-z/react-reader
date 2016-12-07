@@ -1,8 +1,6 @@
 import React, {Component, PropTypes} from 'react'
-import Epub from 'epubjs'
+import Epub from 'epubjs-es6'
 import defaultStyles from './style'
-
-global.ePub = Epub // Fix for v3 branch of epub.js -> needs ePub to by a global var
 
 class EpubView extends Component {
 
@@ -42,7 +40,7 @@ class EpubView extends Component {
     const {toc} = this.state
     const {location, locationChanged} = this.props
     this.rendition = this.book.renderTo(viewer, {
-      flow: 'paginated',
+      method: 'paginate',
       width: '100%',
       height: '100%'
     })

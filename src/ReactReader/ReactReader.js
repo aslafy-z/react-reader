@@ -50,8 +50,8 @@ class ReactReader extends Component {
   onTocChange = (navigation) => {
     const {tocChanged} = this.props
     this.setState({
-      toc: navigation.toc
-    }, () => tocChanged && tocChanged(navigation.toc))
+      toc: navigation
+    }, () => tocChanged && tocChanged(navigation))
   }
 
   onLocationChange = (loc) => {
