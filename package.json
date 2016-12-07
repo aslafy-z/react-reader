@@ -1,6 +1,6 @@
 {
-  "name": "react-reader-alt",
-  "version": "0.7.0",
+  "name": "react-epub",
+  "version": "0.1.1",
   "description": "A epub-reader for React powered by ePubJS",
   "main": "lib/index.js",
   "scripts": {

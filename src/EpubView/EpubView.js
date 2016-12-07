@@ -42,7 +42,7 @@ class EpubView extends Component {
     const {toc} = this.state
     const {location, locationChanged} = this.props
     this.rendition = this.book.renderTo(viewer, {
-      contained: true,
+      flow: 'paginated',
       width: '100%',
       height: '100%'
     })

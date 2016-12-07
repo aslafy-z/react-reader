@@ -47,11 +47,11 @@ class ReactReader extends Component {
     this.refs.reader.prevPage()
   }
 
-  onTocChange = (toc) => {
+  onTocChange = (navigation) => {
     const {tocChanged} = this.props
     this.setState({
-      toc: toc
-    }, () => tocChanged && tocChanged(toc))
+      toc: navigation.toc
+    }, () => tocChanged && tocChanged(navigation.toc))
   }
 
   onLocationChange = (loc) => {
