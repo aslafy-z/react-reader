@@ -1,5 +1,5 @@
 import React, {Component, PropTypes} from 'react'
-import Epub from 'epubjs'
+import Epub from 'epubjs-es6'
 import defaultStyles from './style'
 
 global.ePub = Epub // Fix for v3 branch of epub.js -> needs ePub to by a global var
